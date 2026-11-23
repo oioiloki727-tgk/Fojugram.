@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru"><head><meta charset="utf-8">
+<html lang="ru"><head><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Fojum</title>
 <style>
@@ -300,7 +300,7 @@ const ex=CH.find(c=>c.x==k||c.n.toLowerCase()==n.toLowerCase());if(ex){cs();retu
 if(k=='@foju_oficcial'){CH.unshift({id:1,n:'Fojum',c:['#6ab3f3','#3390ec'],x:k,v:1,on:1,m:[{o:0,t:'Здравствуйте! Это официальный аккаунт Fojum ✨ Пишите нам по любым вопросам.',h:hm()}]});sv();cs();return op(1)}
 const id=Date.now();CH.unshift({id,n,c:[['#ff885e','#ff516a'],['#72d5fd','#2a9ef1'],['#a0de7e','#54cb68'],['#e0a2f3','#d669ed']][id%4],x:k,m:[]});sv();cs();op(id)}
 function th(){const d=document.documentElement,dk=d.dataset.theme?d.dataset.theme=='dark':matchMedia('(prefers-color-scheme:dark)').matches;d.dataset.theme=dk?'light':'dark';cs()}
-function menu(){sh(`<div class="pf" onclick="prof()" style="cursor:pointer">${myav()}<div><b>${esc(U.name)}${bd()}</b><div class="sm">${U.nums[0]||'номера нет'} · @${esc(U.un)}</div>${isO()?ofl():''}</div></div>${accs()}<div class="it" onclick="prof()">👤 Мой профиль</div><div class="it" onclick="nums()">📞 Номера</div><div class="it" onclick="mkt(1)">🖼 NFT-маркет</div><div class="it" onclick="gms()">🎮 Мини-игра · JUM</div><div class="it" onclick="inv(0)">🔗 Пригласить друзей по ссылке</div><div class="it" onclick="prem()">★ Fojum Premium</div><div class="it" onclick="wal()">💎 ${f(S.jm)} JUM · ⭐ ${f(S.st)}</div>${isO()?`<div class="it" onclick="adm()">🛠 Админ-панель</div>`:''}<div class="it" onclick="sg()">🎁 Подарок себе</div><div class="it" onclick="addc()">👥 Добавить контакт</div><div class="it" onclick="th()">🌓 Сменить тему</div><div class="it" onclick="out()">🚪 Выйти</div><div class="sm" style="text-align:center;margin-top:14px">Fojum · демо-версия</div>`)}
+function menu(){sh(`<div class="pf" onclick="prof()" style="cursor:pointer">${myav()}<div><b>${esc(U.name)}${bd()}</b><div class="sm">${U.nums[0]||'номера нет'} · @${esc(U.un)}</div>${isO()?ofl():''}</div></div>${accs()}<div class="it" onclick="prof()">👤 Мой профиль</div><div class="it" onclick="nums()">📞 Номера</div><div class="it" onclick="mkt(1)">🖼 NFT-маркет</div><div class="it" onclick="gms()">🎮 Мини-игра · JUM</div><div class="it" onclick="inv(0)">🔗 Пригласить друзей по ссылке</div><div class="it" onclick="prem()">★ Fojum Premium</div><div class="it" onclick="wal()">💎 ${f(S.jm)} JUM · ⭐ ${f(S.st)}</div>${isO()?`<div class="it" onclick="adm()">🛠 Админ-панель</div>`:''}<div class="it" onclick="sg()">🎁 Подарок себе</div><div class="it" onclick="addc()">👥 Добавить контакт</div><div class="it" onclick="th()">🌓 Сменить тему</div><div class="it" onclick="out()">🚪 Выйти</div><div class="sm" style="text-align:center;margin-top:14px">Fojum · демо-версия · обновлено 23.11.2026</div>`)}
 /* multi-account: 3 per device, 5 if any linked account has Premium */
 let ADDM=0;
 const ACC=()=>{try{return JSON.parse(localStorage.getItem('fj_accs')||'[]')}catch(e){return[]}},
